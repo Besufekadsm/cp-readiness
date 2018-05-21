@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 		<title>Flask App</title>
 	</head>
 	
 	<body>
 		<header>
 			<div class="container">
-				<h1 class="logo">Flask App</h1>
-			</div>
+	                        <h1 class="logo">Flask App</h1>
+        	                <strong><nav>
+                	                <ul class="menu">
+                        	                <li><a href="{{ url_for('home') }}">Home
+                                	        <li><a href="{{ url_for('about') }}">About
+                             	 	</ul>
+                     		</nav></strong>
+              		</div>
+
 		</header>
 
 		<div class="container">
